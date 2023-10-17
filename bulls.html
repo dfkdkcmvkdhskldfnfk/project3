@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+*{margin: 0; padding: 0;}
+body{background: #eaeaea;}
+li,ul{list-style: none;}
+header{
+    width: 100%;
+    height: 80px;
+    background: lightpink;
+    }
+#header #logo{
+    position: absolute;
+    top: 10px;
+    left: 10%;
+}
+
+#header>ul{
+    width: 1000px;
+    height: 80px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#header>ul>li{
+    width: 130px;
+    float: left;
+    height: 80px;
+    position: relative;
+}
+#header>ul>li:nth-child(1){
+    width: 150px;
+}
+#header>ul>li:nth-child(1)>a{
+    width: 150px;
+}
+
+#header>ul>li>.red{
+    width: 130px;
+    height: 80px;
+    position: absolute;
+    bottom: 5px;
+}
+
+#header>ul>li>.red>p{
+    width: 0px;
+    height: 80px;
+    margin: 0 auto;
+    border-bottom: 4px solid red;
+    transition: all .5s;
+}
+
+#header>ul>li:hover .red>p{width: 130px;}
+#header>ul>li:nth-child(1):hover .red>p{width: 150px;}
+
+#header>ul>li>a{
+    display: block;
+    width: 130px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+#header>ul>li>.sme{
+    width: 130px;
+    height: 0pc;
+    position: relative;
+    left: 0;
+    background: #fff;
+    top: 0;
+    overflow: hidden;
+    z-index: 9;
+    transition: all .5s;
+}
+
+#headr>ul>li>.sme>li{
+    width: 130px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#header>ul>li>.sme>li>a{
+    width: 130px;
+    height: 50px;
+    display: block;
+    font-size: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
+#header>ul>li:nth-child(2):hover>.sme{height: 300px;}
+#header>ul>li:nth-child(3):hover>.sme{height: 150px;}
+#header>ul>li:nth-child(4):hover>.sme{height: 100px;}
+
+#eheqhrl{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    right: 280px;
+    top: 25px;
+}
+
+#eheqhrl>li{
+    float: left;
+    margin-left: 20px;
+}
+
+
+</style>
+</head>
+<body>
+<header>
+<div id="header">
+<div id="logo"><img src="images/logo.png"></div>
+<ul>
+<li><div class="red"><p></p></div><a herf="#">ABOUT BULLSONE</a></li>
+<li><div class="red"><p></p></div><a herf="#">PRODUCT</a>
+<ul class="sme">
+<li><a herf="#">ENGINE CARE</a></li>
+<li><a herf="#">BULLSDONE MIRROR</a></li>
+<li><a herf="#">AIR CARE</a></li>
+<li><a herf="#">GLASS CARE</a></li>
+<li><a herf="#">SURFACE CARE</a></li>
+<li><a herf="#">ACCESSARY</a></li>
+<li><a herf="#">BalanceOn</a></li>    
+</ul></li>
+<li><div class="red"><p></p></div><a herf="#">PR CENTER</a>
+<ul class="sme">
+<li><a herf="#">보도자료</a></li>
+<li><a herf="#">TV광고</a></li>
+<li><a herf="#">공지사항</a></li>
+<li><a herf="#">불스원기술력</a></li>
+<li><a herf="#">EVENT</a></li>    
+</ul></li>
+<li><div class="red"><p></p></div><a herf="#">CS CENTER</a>
+<ul class="sme">
+<li><a herf="#">FAQ</a></li>
+<li><a herf="#">Q&amp;A</a></li>
+</ul></li>
+<li><div class="red"><p></p></div><a herf="#">BLOG</a></li>
+<li><div class="red"><p></p></div><a herf="#">RECRULT</a></li> 
+</ul>    
+<ol id="eheqhrl">
+<li><a herf="#"><img src="images/top_icon.png"></a></li>
+<li>|</li>
+<li><a herf="#"><img src="images/english.png"></a></li>
+<li><a herf="#"><img src="images/chinese.png"></a></li>   
+</ol>
+</div>
+</header>  
+</body>
+</html>
