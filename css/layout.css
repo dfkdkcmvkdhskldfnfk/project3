@@ -1,0 +1,274 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+ul,li{list-style: none;}
+a{
+    text-decoration: none;
+    color: initial;
+}
+body{
+    font: normal 400 14px/1.2 'NotoSans', sans-serif;
+    background-color: #fff;
+}
+#warp{
+    width: 100%;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 9999;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.logo{
+    width: 132px;
+    height: 70px;
+    position: absolute;
+    top: 25px;
+    left: 350px;
+}
+.lang{
+    width:65px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 290px;
+}
+.lang li{
+    width:30px;
+    float: left;
+    text-align: center;
+}
+.lang li:last-child{
+    border-left: 1px solid black;
+}
+.menu{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 20px;
+    left: 0px;
+}
+
+.menu>li{
+    width: 135px;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+    text-align: center;
+    position: relative;
+    left: 550px;
+}
+.menu>li>a{
+    display: block;
+    font-size: 15px;
+    font-weight:555;
+    color: #444;
+}
+
+.menu span{
+    width: 130px;
+    height: 35px;
+    display: block;
+    float: right;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #00A5B1;
+    margin-top: 33px;
+}
+.menu span>a{
+    line-height: 35px;
+    color: #fff;
+}
+
+.submenu{
+    width: 100%;
+    height: 240px;
+    /* height: 0; */
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    overflow: hidden;
+}
+
+.menu:hover .submenu{
+    display: block;
+}
+
+.submenu>li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    transition: all .5s;
+}
+
+.submenu>li:hover a{
+    text-decoration: underline;
+    color: #000;
+}
+.submenu>li:nth-child(1){
+    margin-top: 20px;
+}
+.submenu>li>a{
+    width: 100%;
+    height: 30px;
+    display: block;
+    transition: all .5s;
+    color: #444;
+    font-size: 15px;
+}
+
+.back{
+    width: 100%;
+    height: 240px;
+    /* height: 0; */
+    display: none;
+    position: relative;
+    top: 100px;
+    left: 0px;
+   background: rgba(255, 255, 255, 0.9);
+   z-index: -1;
+}
+.menu:hover .back{
+    display: block;
+}
+
+.slider{
+    position: relative;
+    top: 100px;
+}
+
+.fix{
+    width: 100px;
+    height: 250px;
+    position: fixed;
+    right: 230px;
+    top: 180px;
+}
+
+.fix li{
+    width: 100px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.fix li:last-child{
+    margin-top: 20px;
+}
+
+.main_1{
+    width: 66%;
+    height: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contents>h1{
+    font-size: 25px;
+    color: #444;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.contents{
+    width: 100%;
+    height: 95%;
+    position: relative;
+}
+.contents article{
+    width: 300px;
+    height: 45%;
+    margin: 10px;
+    float: left;
+
+}
+.contents article>a>img{
+    width: 90%;
+}
+.contents article h5{
+    margin-top: 20px;
+    color: #7b7b7b;
+}
+.contents article p{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.contents .right{
+    width: 260px;
+    height: 850px;
+    background: #C8E2DF;
+    position: absolute;
+    right: 33px;
+    top: 55px;
+}
+.contents .right>li:nth-child(2),
+.contents .right>li:nth-child(3){
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+}
+.contents .right>li>h3{
+    font-weight: bold;
+}
+.contents .right>li>p{
+    line-height: 20px;
+}
+
+.contents .right span{
+    display: block;
+    margin: 15px auto 40px;
+    width: 130px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #00A5B1;
+}
+.contents .right>li>span>a{
+    font-size: 11px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.main_1_btt{
+    display: block;
+    width: 120px;
+    height: 30px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.main_2{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.md{
+    width: 70%;
+    margin: 0 auto;
+}
+.btn1, .btn2{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 65px;
+    border-radius: 30px;
+    background: #00A5B1;
+}
+.md_slide{
+    width: 1000px;
+    margin: 30px auto;
+}
+.btn1{
+    position: absolute;
+    left: 350px;
+
+}
